@@ -5,13 +5,12 @@
 </div>
 A scalable architecture on AWS, designed for deploying Nginx web servers. It features a Virtual Private Cloud (VPC) with multiple subnets across availability zones. Public subnets contain an internet gateway and a NAT gateway, enabling secure internet access for instances in private subnets. The private subnets host the Nginx servers within an Auto-Scaling group, ensuring high availability and scalability. Security groups manage inbound and outbound traffic effectively, while route tables direct network traffic appropriately across the infrastructure components.
 
-
-# Architecture
 ## Step 01: Build a A scalable architecture
    
 <img src="https://github.com/ZaynabMohammed/Scalable-architecture-on-AWS/blob/master/imgs/aws.png" width="1100" height="620">
 
-1. Run below commands to build below architecture.
+## Step 02: Build this architecture on AWS with Terraform
+1. Run below commands to build previous architecture.
 ```bash
 # Format Terraform files
 terraform fmt
@@ -28,7 +27,8 @@ terraform apply
 ```bash
 Apply complete! Resources: 26 added, 0 changed, 0 destroyed.
 ```
-3. In the browser's address bar, enter `ALB-DNS-Name` to route traffic to Auto-scaling-group.
+## Step 03: Access NGINX through browser
+1. In the browser's address bar, enter `ALB-DNS-Name` to route traffic to Auto-scaling-group in `private-subnets`
    
    <img src="https://github.com/ZaynabMohammed/Scalable-architecture-on-AWS/blob/master/imgs/1.png">
 
