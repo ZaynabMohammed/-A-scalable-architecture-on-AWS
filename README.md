@@ -27,6 +27,12 @@ terraform apply
 ```bash
 Apply complete! Resources: 26 added, 0 changed, 0 destroyed.
 ```
+ <img src="https://github.com/ZaynabMohammed/Scalable-architecture-on-AWS/blob/master/imgs/3.png">
+
+<img src="https://github.com/ZaynabMohammed/Scalable-architecture-on-AWS/blob/master/imgs/4.png">
+
+<img src="https://github.com/ZaynabMohammed/Scalable-architecture-on-AWS/blob/master/imgs/5.png">
+  
 ## Step 03: Access NGINX through browser
 1. In the browser's address bar, enter `ALB-DNS-Name` to route traffic to Auto-scaling-group in `private-subnets`
    
